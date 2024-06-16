@@ -123,3 +123,8 @@ srv03
 ; usage : security.yml
 [defender_off]
 srv02
+
+; disable defender cloud telemetry
+; usage : security.yml
+[defender_telemetry_off]
+ws01

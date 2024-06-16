@@ -1,0 +1,5 @@
+- name: Disable windows defender sending sample
+  win_shell: Set-MpPreference -MAPSReporting 0
+
+- name: Disable windows defender sending sample #2 : never send
+  win_shell: Set-MpPreference -SubmitSamplesConsent 2

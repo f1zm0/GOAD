@@ -19,6 +19,11 @@
   vars:
     script_path: "../ad/{{domain_name}}/scripts"
 
+- name: "Setup Defender telemetry"
+  hosts: defender_telemetry_off
+  roles:
+    - { role: 'settings/windows_defender_telemetry', tags: ['windows_defender', 'windows_defender_telemetry'] }
+
 - name: "Setup security with tasks"
   hosts: domain
   tasks:
